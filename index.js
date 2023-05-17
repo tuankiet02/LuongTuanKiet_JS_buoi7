@@ -7,6 +7,7 @@ function themSoVaoMang() {
 
   document.getElementById("mangNguoiDungNhap").innerHTML = "👉" + mangDuLieu;
 }
+
 // ===Bai 1============
 function tinhTongCacSoDuong() {
   var tongSoDuong = 0;
@@ -19,6 +20,7 @@ function tinhTongCacSoDuong() {
   document.getElementById("tongCacSoDuong").innerHTML =
     "👉 Tổng số dương: " + tongSoDuong;
 }
+
 // ===Bai 2============
 function demCacSoDuong() {
   var demCacSoDuong = 0;
@@ -30,6 +32,7 @@ function demCacSoDuong() {
   document.getElementById("demSoDuong").innerHTML =
     "👉Số dương:" + demCacSoDuong;
 }
+
 // ===Bai 3============
 function timSoNhoNhat() {
   var min = mangDuLieu[0];
@@ -40,11 +43,12 @@ function timSoNhoNhat() {
   }
   document.getElementById("timSoNhoNhat").innerHTML = "👉 Số nhỏ nhất:  " + min;
 }
+
 // ===Bai 4============
 function timSoDuongNhoNhat() {
-  var timSoDuongNhoNhat = -1;
+  var timSoDuongNhoNhat = 0;
   for (var i = 0; i < mangDuLieu.length; i++) {
-    if ((timSoDuongNhoNhat == -1 ||timSoDuongNhoNhat > mangDuLieu[i]) && mangDuLieu[i] > 0) {
+    if ((timSoDuongNhoNhat == 0 ||timSoDuongNhoNhat > mangDuLieu[i]) && mangDuLieu[i] > 0) {
       timSoDuongNhoNhat = mangDuLieu[i];
     }
   }
@@ -69,6 +73,7 @@ function timSoChanCuoi() {
   document.getElementById("timSoChanCuoi").innerHTML =
     "👉 Số chẵn cuối cùng: " + soChanCuoi;
 }
+
 // ===Bai 6============
 function hoanDoiViTri() {
   var viTri1 = document.getElementById("viTri1").value;
@@ -79,6 +84,7 @@ function hoanDoiViTri() {
   mangDuLieu[viTri2] = bienTam;
   document.getElementById("doiViTri").innerHTML ="👉 Mảng sau khi đổi:" + mangDuLieu;
 }
+
 // ===Bai 7============
 function sapXepTangDan() {
   var mangDuLieu2 = [];
@@ -127,6 +133,7 @@ function demCacSoNguyen() {
   document.getElementById("nhapSoThuc").innerHTML =
     "👉Số nguyên: " + demSoNguyen;
 }
+
 // ===Bai 10============
 function soSanhAmDuong() {
   var soDuong = 0;
